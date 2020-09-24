@@ -16,4 +16,9 @@ public class OrderController {
     public String saveOrder(Order order) {
         return "success";
     }
+
+    @GetMapping("/api/orders")
+    public String getOrders() {
+        return "orders";
+    }
 }
