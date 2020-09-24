@@ -13,8 +13,13 @@ public class UserController {
     }
 
     @GetMapping("/api/users/{id}")
-    public Long getUser(@PathVariable Long id){
+    public Long getUser(@PathVariable Long id) {
         //hotfix
+        return id;
+    }
+
+    @DeleteMapping("/api/users/{id}")
+    public Long deleteUser(@PathVariable Long id) {
         return id;
     }
 }
