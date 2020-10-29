@@ -17,5 +17,10 @@ public class HelloController {
         return "main";
     }
 
+    @GetMapping("test")
+    public String test() {
+        return "test";
+    }
+
 
 }
